@@ -54,8 +54,7 @@
         android:layout_marginTop="32dp"
         android:ems="10"
         android:gravity="end"
-        android:inputType="textPersonName"
-        android:text="0"
+        android:text=" "
         android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -72,8 +71,7 @@
         android:layout_marginTop="8dp"
         android:ems="10"
         android:gravity="end"
-        android:inputType="textPersonName"
-        android:text="0"
+        android:text=" "
         android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -96,7 +94,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:layout_marginBottom="32dp"
-        android:text="operacion"
+        android:text="resultado"
         android:textSize="28sp"
         app:layout_constraintBottom_toTopOf="@+id/btn8"
         app:layout_constraintEnd_toEndOf="parent"
@@ -171,13 +169,16 @@
 
     <Button
         android:id="@+id/btnIgual"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        android:layout_marginStart="16dp"
+        android:layout_width="347dp"
+        android:layout_height="62dp"
         android:text="="
         android:textSize="40sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/btnCero"
-        app:layout_constraintStart_toEndOf="@+id/btnCero" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.562"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.992" />
 
     <Button
         android:id="@+id/btnDiv"
@@ -189,7 +190,18 @@
         android:textSize="40sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/btnCero"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btnIgual" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/btnCero" />
+
+    <Button
+        android:id="@+id/btnPor"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="16dp"
+        android:text="*"
+        android:textSize="40sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnDiv"
+        app:layout_constraintStart_toEndOf="@+id/btnDiv" />
 
     <Button
         android:id="@+id/btnCero"
