@@ -29,6 +29,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         initUI()
     }
 
+
+
     /*
     * El método nos sirve para inicializar nuestros listeners,
     * es completamente opcional
