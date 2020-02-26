@@ -47,6 +47,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         btn7.setOnClickListener(this)
         btn8.setOnClickListener(this)
         btn9.setOnClickListener(this)
+        btnCero.setOnClickListener(this)
         btnMas.setOnClickListener(this)
         btnMen.setOnClickListener(this)
         btnPor.setOnClickListener(this)
@@ -128,6 +129,14 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                     etOperando2.text.append("9")
                 }else{
                     etOperando1.text.append("9")
+                }
+
+            }
+            R.id.btnCero-> {
+                if (operacionPendiente) {
+                    etOperando2.text.append("0")
+                } else {
+                    etOperando1.text.append("0")
                 }
             }
             R.id.btnPunto->{
